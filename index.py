@@ -1,6 +1,10 @@
 # © Arcturus '22
 # this module has functions needed for implementing the Extended Hamming Code
 
+#! [P.S.] this program still has flaws with regards to multiple errors for the same byte
+##        the program labels the parity bits as the corrupt when there are multiple errors
+##        but it is working for the most part
+
 from random import randint
 
 def parity(x):
